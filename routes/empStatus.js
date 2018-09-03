@@ -17,7 +17,7 @@ var config = {
 
 router.get('/opdb/getEmployeeStatus', function (req, res) {
 
-    console.log("the config is",config);
+    console.log("the config of empstatus is",config);
     // connect to your database
     sql.close();
     sql.connect(config, function (err) {
@@ -27,7 +27,7 @@ router.get('/opdb/getEmployeeStatus', function (req, res) {
         // create Request object
         var request = new sql.Request();
 
-        console.log("the resquestr is ", request)
+        //console.log("the resquestr is ", request)
 
         // query to the database and get the data
         request.query(" select * from Accounting.vw_EmployeeStatus", function (err, recordset) {
