@@ -7,7 +7,7 @@ var config = {
     user: 'sa',
     password: 'aP99adr%%M',
     port: 49893,
-    server: '63.145.107.130\\QRIITSQLDB',
+    server: 'QRIITSQLDBW01\\QRIITSQLDB',
     database: 'QRIREPORTING',
     options: {
         encrypt : false
